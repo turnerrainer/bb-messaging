@@ -8,7 +8,7 @@ Link to GitHub repository and OpenAPI documentation site for the building blocks
 
 ## ANNEX I - Use Case Tables and Component diagrams
 
-<figure><img src=".gitbook/assets/image3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image3 (1).png" alt=""><figcaption></figcaption></figure>
 
 #### **Use case table - Birth Certificate to Children**
 
