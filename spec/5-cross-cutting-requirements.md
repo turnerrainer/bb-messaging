@@ -119,11 +119,11 @@ Audit logs must be accessible by a given endpoint by central service provider on
 
 Audit logs should be periodically removed from their original source after a defined period of time.
 
-## **3.18 Cloud native is a MUST**
+## **5.18 Cloud native is a MUST**
 
 All stand-alone applications used and services created based upon them must be cloud-native in a sense of [https://en.wikipedia.org/wiki/Cloud\_native\_computing](https://en.wikipedia.org/wiki/Cloud\_native\_computing).
 
-## **3.19** Source code MUST be published under a permissive license and be easily accessible by a public repository
+## **5.19** Source code MUST be published under a permissive license and be easily accessible by a public repository
 
 Full source code of the building block must be published as easily accessible open source code.
 
