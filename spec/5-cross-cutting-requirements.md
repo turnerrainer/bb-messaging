@@ -12,13 +12,13 @@ Cross-cutting requirements will use the same language (MUST or SHOULD) as specif
 
 ## 5.1 Denormalized databases MUST be used
 
-There are 2 main reasons for usingdenormalized databases\[1] \[2] \[3]  instead of traditionalnormalized databases.
+There are 2 main reasons for using denormalized databases  instead of traditionalnormalized databases.
 
 First, to significantly improve the performance of read queries. This is highly important as databases of Messaging BB will be under a heavy load of requests that in many cases are expected to respond near real-time.
 
 Second, to be able to export the content of databases in the format of time-series databases (see below for its reasons).
 
-To achieve this, using "UPDATE" and "DELETE" queries~~queires~~ in SQL commands SHOULD be disabled. If not, they MUST be avoided by developers and caught by automated tests is still used.
+To achieve this, using "UPDATE" and "DELETE" queries in SQL commands SHOULD be disabled. If not, they MUST be avoided by developers and caught by automated tests is still used.
 
 ## **5.2 Content of production-level databases SHOULD be continuously archieved centrally**
 
@@ -65,6 +65,14 @@ Failed: messages that are errored and we gave up to send
 Messages not delivered in a period of 24 hours: Any errored or queued messages more than 24 hours old must be labeled as failed and go out of the queue.
 
 Messages retrial: Errored messages must be retried for 24 hours.
+
+## 5.7 All published software updates MUST produce a new version number&#x20;
+
+Software updates versioning follows the concept of Semantic Versioning (https://semver.org/).
+
+## 5.8 MUST be backward compatible in case of updates within the same major release
+
+When adding new functionalities and/or messaging platforms, previous developments must remain intact if not deliberately changed or removed.
 
 ## 5.9 MUST follow OpenAPI annotations
 
@@ -128,3 +136,7 @@ All stand-alone applications used and services created based upon them must be c
 Full source code of the building block must be published as easily accessible open source code.
 
 All custom developments are published under the MIT License by default if not clearly stated otherwise.
+
+## Security requirements&#x20;
+
+In case of not applying any or some of [GovStack global cross-cutting security requirements](https://govstack.gitbook.io/specification/v/govstack-specification-main/security-requirements), listing all such cases is a must.
