@@ -36,9 +36,31 @@ This workflow requires interaction with the _Information Mediator_ and a source 
 
 The sequence diagram shows the flow of data between building blocks for this workflow.
 
-<figure><img src=".gitbook/assets/image1.png" alt=""><figcaption><p><a href="https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgTWVzc2FnaW5nVUMtMTogR292ZXJubWVudCB0byBQZXJzb24gKFAyRykKClNlbmRlciAtLT4ALAogQkI6IFNlbmQgZXYALgdjbGllbnQAFBtUcmlnZ2VyACsHb24gXG5hIHNwZWNpZmljIGRheSBhbmQgdGltZQoKAF0MAHUFAIB_BjogQ29uZmlybSBtAIE7BWUgcmVjZWl2YWwAIBNDb21tdW5pY2F0aW9uIENoYW5uZWw6IEFwcGx5IHJ1bmVzAGwFcG9saWNpZXMgXG50byBwcm9jZXNzIHRoZQBcCAoKADUVIC0-AIIiBwCCAwcADSIAgT0IUHVibGlzaACBPAlzdGF0dXMK&#x26;s=default">https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgTWVzc2FnaW5nVUMtMTogR292ZXJubWVudCB0byBQZXJzb24gKFAyRykKClNlbmRlciAtLT4ALAogQkI6IFNlbmQgZXYALgdjbGllbnQAFBtUcmlnZ2VyACsHb24gXG5hIHNwZWNpZmljIGRheSBhbmQgdGltZQoKAF0MAHUFAIB_BjogQ29uZmlybSBtAIE7BWUgcmVjZWl2YWwAIBNDb21tdW5pY2F0aW9uIENoYW5uZWw6IEFwcGx5IHJ1bmVzAGwFcG9saWNpZXMgXG50byBwcm9jZXNzIHRoZQBcCAoKADUVIC0-AIIiBwCCAwcADSIAgT0IUHVibGlzaACBPAlzdGF0dXMK&#x26;s=default</a></p></figcaption></figure>
+#### Messaging: Government to Person (G2P)
 
-<figure><img src=".gitbook/assets/image4.png" alt=""><figcaption><p><a href="https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgTWVzc2FnaW5nVUMtMjogUGVyc29uIHRvIEdvdmVybm1lbnQgKEcyUCkKCgAVBy0-IENvbW11bmljYXRpb24gQ2hhbm5lbDogU2VuZCBhIG0ATgVlCgoAEhUgLS0-AGwKIEJCADEHZXZlbnQgdG8gY2xpZW50CgoAGAwAMAUAXxdDb25maXJtAG8IIHJlY2VpdmFsADQOLT5JbmZvcm0AgS0GTWVkaWF0b3IAegVQcm9jZXNzAHgKYmUgaGFuZGxlZAo&#x26;s=default">https://www.websequencediagrams.com/cgi-bin/cdraw?lz=dGl0bGUgTWVzc2FnaW5nVUMtMjogUGVyc29uIHRvIEdvdmVybm1lbnQgKEcyUCkKCgAVBy0-IENvbW11bmljYXRpb24gQ2hhbm5lbDogU2VuZCBhIG0ATgVlCgoAEhUgLS0-AGwKIEJCADEHZXZlbnQgdG8gY2xpZW50CgoAGAwAMAUAXxdDb25maXJtAG8IIHJlY2VpdmFsADQOLT5JbmZvcm0AgS0GTWVkaWF0b3IAegVQcm9jZXNzAHgKYmUgaGFuZGxlZAo&#x26;s=default</a></p></figcaption></figure>
+```mermaid
+sequenceDiagram
+
+Workflow BB-->>Information Mediator: Trigger event on<br />specific day and time
+Information Mediator-->>Messaging BB: Initate request with<br />messaging data
+Messaging BB-->>Information Mediator: Confirm message receival<br />and queueing
+Messaging BB-->>Communication Channel: Apply rules and policies<br />to process the message
+Communication Channel->>Person: Send message
+Communication Channel-->>Messaging BB: Publish message status
+Messaging BB-->>Information Mediator: Publish message Status
+```
+
+#### Messaging: Person to Government (P2G)
+
+```mermaid
+sequenceDiagram
+
+Person->>Communication Channel:Send a message
+Communication Channel-->>Messaging BB: Send event to client
+Messaging BB-->>Communication Channel: Confirm message receival
+Messaging BB-->>Information Mediator: Proxy event to<br />Information Mediator
+Information Mediator-->>Workflow BB: Proxy event to be handled<br />by Workflow BB
+```
 
 ## **9.3 Interactions**
 
