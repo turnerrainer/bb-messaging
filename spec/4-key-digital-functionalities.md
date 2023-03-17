@@ -1,39 +1,36 @@
 # 4 Key Digital Functionalities
 
-{% hint style="success" %}
-The Key Digital Functionalities describe the core (required) functions that this building block must be able to perform. These functionalities should be described as business processes as opposed to technical specifications or API definitions.
-{% endhint %}
-
-Messaging building block is a standalone messaging gateway/client/proxy (including all possible modalities: email, SMS, etc), but can also facilitate connections with existing messaging service providers by enabling safe communication. The communication in this building block can be categorized  in two different directions as follows:
+The Messaging Building Block is a standalone messaging gateway/client/proxy (including all possible modalities: email, SMS, etc.), but can also facilitate connections with existing messaging service providers by enabling safe communication. The communication in this building block can be categorized  in two different directions as follows:
 
 * Government to person (G2P):
-  * Informing citizens about their registration,
-  * Reminding and requesting citizens' confirmation for appointment booking or other events
-  * Delivering information on scale to citizens
-  * Alerting citizens in emergency contexts
+  * informing citizens about their registration,
+  * reminding and requesting citizens' confirmation for appointment booking or other events,
+  * delivering information at scale to citizens,
+  * alerting citizens in emergency contexts.
 * Person to Government (P2G):
-  * Providing data to the government/service
-  * Getting confirmation about government services and interactions quickly
-  * Asking for information about government services
+  * providing data to the government/service,
+  * getting confirmation about government services and interactions quickly,
+  * asking for information about government services.
 
-Communication between different government services (government to government) is out of the scope of this building block but can be enabled through the Information Mediator building block.
+Communication between different government services (government to government) is out of the scope of this Building Block but can be enabled through the Information Mediator Building Block.
 
 ## 4.1 Messaging Building Block Key Functionalities
 
-1. The Messaging BB is part of the GovStack implementation and is prompted to open up a two-way communication channel to deliver and capture messages/data between the GovStack systems and the end users, physical and legal persons.
-2. As a rule, messaging BB does not own any information, but is carrying the minimum amount of (meta)data needed to transfer/publish a message. Messaging BB allows other BB-s and applications to reach out to customers/citizens in order for them to be able to make a decision or access a service. BB can also be used for broadcasting a disaster message etc.
-3. Messaging policies are configurable modalities and channels that can be accessed/utilized through the Messaging BB in order to reach out to the users or groups. BB is using existing applications/channels, such as e-mail, SMS, messaging platforms or enabling users to subscribe to an application/channel provided by Messaging BB itself for text-based content.
-4. Having published its messaging policies and services at the Information Mediator BB, the other BB-s and applications can discover and use the services of the Messaging BB.
-5. Messaging BB is allowing for asynchronous communication, using either point-to-point communication or a pubsub model (using Information Mediator BB) where the user is subscribed to a message room/group and will be receiving all messages intended for the “mother of newborn child” group.
-6. Security. Before allowing any messages to be published, the Messaging BB fetches a corresponding ID and a role or a session token available for the user for authentication and access purposes. Incorporates privacy into its design when the purpose of the authentication is not revealed if a service provider sends an authentication request.
+1. The Messaging Building Block is part of the GovStack implementation and is prompted to open up a two-way communication channel to deliver and capture messages/data between the GovStack systems and the end users, physical and legal persons.
+2. As a rule, the Messaging Building Block does not own any information but is carrying the minimum amount of (meta) data needed to transfer/publish a message. Messaging Building Block allows other Building Blocks and applications to reach out to customers/citizens in order for them to be able to make a decision or access a service. This Building Block can also be used for broadcasting a disaster message.
+3. Messaging policies are configurable modalities and channels that can be accessed/utilized through the Messaging Building Block in order to reach out to the users or groups. This Building Block is using existing applications/channels, such as e-mail, SMS, and messaging platforms for enabling users to subscribe to an application/channel provided by Messaging Building Block itself for text-based content.
+4. Having published its messaging policies and services at the Information Mediator Building Block, the other Building Blocks and applications can discover and use the services of the Messaging Building Block.
+5. Messaging Building Block allows for asynchronous communication, using either point-to-point communication or a Pub/Sub model (using Information Mediator Building Block) where the user is subscribed to a message room/group and will be receiving all messages intended for the “mother of newborn child” group.
+6. Security. Before allowing any messages to be published, the Messaging Building Block fetches a corresponding ID and a role or a session token available for the user for authentication and access purposes. Incorporates privacy into its design when the purpose of the authentication is not revealed if a service provider sends an authentication request.
 
 ## **4.2 Examples for Messaging Building Block**
 
-Messaging BB is enabling signing up for and receiving services, such as:
+Messaging Building Block is enabling signing up for and receiving services, such as:
 
-* mother and child care
-* social care
-* receiving entitlements from the government
-* opening bank accounts
-* communicating disaster messages or reminders about the voters' rights during elections
-* etc. The use-cases are detailed in final section of this document: ANNEX I - Use Case Tables
+* mother and childcare;
+* social care;
+* receiving entitlements from the government;
+* opening bank accounts;
+* communicating disaster messages or reminders about the voters' rights during elections; etc.
+
+The use cases are detailed in the section of this document: [ANNEX I - Use Case Tables](10-other-resources.md#annex-i-use-case-tables-and-component-diagrams).
