@@ -1,3 +1,10 @@
+---
+description: >-
+  This section links to any external documents that may be relevant, such as
+  standards documents or other descriptions of this Building Block that may be
+  useful.
+---
+
 # 10 Other Resources
 
 Link to architecture requirements document (and specific sections within that document, such as cross-functional requirements, and general recommendations).

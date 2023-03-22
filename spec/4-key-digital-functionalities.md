@@ -1,3 +1,9 @@
+---
+description: >-
+  Key Digital Functionalities describe the core (required) functions that this
+  Building Block must be able to perform.
+---
+
 # 4 Key Digital Functionalities
 
 The Messaging Building Block is a standalone messaging gateway/client/proxy (including all possible modalities: email, SMS, etc.), but can also facilitate connections with existing messaging service providers by enabling safe communication. The communication in this building block can be categorized  in two different directions as follows:

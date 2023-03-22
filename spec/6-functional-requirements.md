@@ -1,3 +1,7 @@
+---
+description: This section lists the technical capabilities of this Building Block.
+---
+
 # 6 Functional Requirements
 
 This section lists the technical capabilities of the Messaging Building Block.

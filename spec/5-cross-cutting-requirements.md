@@ -1,3 +1,9 @@
+---
+description: >-
+  This section will highlight important requirements or describe any additional
+  cross-cutting requirements that apply to this Building Block.
+---
+
 # 5 Cross-Cutting Requirements
 
 The Cross-cutting requirements described in this section are an extension of the cross-cutting requirements defined in the architecture specification document. This section will describe any additional cross-cutting requirements that apply to this Building Block.
@@ -34,7 +40,7 @@ In case of message replication, all unprocessed replicated messages MUST be kept
 
 ## **5.5 MUST support policy configuration**
 
-Admin of the room must be able to choose the policy profile with the configuration of message provider, retrial frequency, e.g.
+Admin of the room must be able to choose the policy profile with the configuration of message provider, e.g. retrial frequency.
 
 ## **5.6** MUST support queuing mechanism
 
