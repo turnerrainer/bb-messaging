@@ -12,13 +12,13 @@ Cross-cutting requirements will use the same language (MUST or SHOULD) as specif
 
 ## 5.1 Denormalized databases MUST be used
 
-There are 2 main reasons for using denormalized databases instead of traditional normalized databases.
+There are two main reasons for using denormalized databases instead of traditional normalized databases.
 
 First, to significantly improve the performance of read queries. This is highly important as databases of the Messaging Building Block will be under a heavy load of requests that in many cases are expected to respond near real-time.
 
 Second, to be able to export the content of databases in the format of time-series databases (see below for its reasons).
 
-To achieve this, using "UPDATE" and "DELETE" queries in SQL commands SHOULD be disabled. If not, they MUST be avoided by developers and caught by automated tests is still used.
+To achieve this, using "UPDATE" and "DELETE" queries in SQL commands SHOULD be disabled. If not, they MUST be avoided by developers and caught by automated tests if still used.
 
 ## **5.2 Content of production-level databases SHOULD be continuously archived centrally**&#x20;
 
@@ -58,7 +58,7 @@ Delivered: messages with proper confirmation that was delivered to the end-user.
 
 Errored: messages with error during delivery.
 
-Failed: messages that are errored and we gave up to send.
+Failed: messages that are errored and we gave up sending.
 
 ### Delivery business rules:
 

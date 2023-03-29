@@ -17,7 +17,7 @@ The resource model shows the relationship between data objects that are used by 
 The following standards are applicable to data structures in the Messaging Building Block:
 
 * all services are provided as REST API requests;
-* only TLS Server Name Indication (SNI) extension-compatible requests are allowed;
+* only Transport Layer Security (TLS) Server Name Indication (SNI) extension-compatible requests are allowed;
 * REST calls and responses use JSON as the only allowed data format.
 
 ### **7.2.1 Standards**
@@ -38,7 +38,7 @@ The data elements provide detail for the resource model defined above. This sect
 7. Link to the applicable standard(s);
 8. Notes.
 
-_**Note**: The data elements for each entity in the resource model will also be represented in the OpenAPI schema (_[_GitHub repository_](https://github.com/GovStackWorkingGroup/BuildingBlockAPI)_)._
+_**Note**: The data elements for each entity in the resource model will also be represented in the OpenAPI schema_ ([GitHub repository](https://github.com/GovStackWorkingGroup/BuildingBlockAPI)).
 
 ### 7.3.1 Data Elements (Generic Example)
 

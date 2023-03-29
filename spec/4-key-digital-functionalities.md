@@ -6,16 +6,16 @@ description: >-
 
 # 4 Key Digital Functionalities
 
-The Messaging Building Block is a standalone messaging gateway/client/proxy (including all possible modalities: email, SMS, etc.), but can also facilitate connections with existing messaging service providers by enabling safe communication. The communication in this building block can be categorized  in two different directions as follows:
+The Messaging Building Block is a standalone messaging gateway/client/proxy (including all possible modalities: email, SMS, etc.), but can also facilitate connections with existing messaging service providers by enabling safe communication. The communication in this Building Block can be categorized  in two different directions as follows:
 
 * Government to person (G2P):
-  * informing citizens about their registration,
-  * reminding and requesting citizens' confirmation for appointment booking or other events,
-  * delivering information at scale to citizens,
+  * informing citizens about their registration;
+  * reminding and requesting citizens' confirmation for appointment booking or other events;
+  * delivering information at scale to citizens;
   * alerting citizens in emergency contexts.
 * Person to Government (P2G):
-  * providing data to the government/service,
-  * getting confirmation about government services and interactions quickly,
+  * providing data to the government/service;
+  * getting confirmation about government services and interactions quickly;
   * asking for information about government services.
 
 Communication between different government services (government to government) is out of the scope of this Building Block but can be enabled through the Information Mediator Building Block.

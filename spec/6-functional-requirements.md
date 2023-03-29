@@ -37,7 +37,7 @@ The queuing process varies according to the policy and message type attached to 
 
 Messaging requests go through a final check to be clean of defects and inconsistencies, to check with external systems as necessary:
 
-* check for message duplicates by making an actual request to a Time Series Database (TSDB) to see if entries with MHASH and UMID exist;
+* check for message duplicates by making an actual request to a Time Series Database to see if entries with MHASH and UMID exist;
 * low-level validation of data types and data completeness;
 * check for inconsistencies;
 * standard error messages and codes are used as a response to inconsistent requests.
@@ -52,7 +52,7 @@ Messaging requests go through a final check to be clean of defects and inconsist
 
 ### **6.1.5 Batch logic**
 
-* Find unprocessed requests from TSDB.
+* Find unprocessed requests from Time Series Database.
 * Prepare each request for actual processing, requests may come as single or batch messages and every message needs to be treated as a separate entry.
 * It prepares unprocessed requests for actual processing.
 
@@ -107,7 +107,7 @@ List any cross-cutting security requirements that apply to the context from the 
 
 | **Requirement**                                                                                                                                                                                                                     | **Type (Must/Should/May)** |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| Secure API exposure:  All APIs exposed via secure socket connections (HTTPS)                                                                                                                                                        | Must                       |
+| Secure API exposure:  All APIs exposed via secure socket connections (HTTPS).                                                                                                                                                       | Must                       |
 | Client application authorisation tokens: Client applications must send authorization tokens in the authorization header of the request to authenticate users and the API Management Gateway will verify whether the token is valid. | Must                       |
 | Perform input validation checks to prevent oversized message attacks, SQL injection attacks as well as JSON and XML threats.                                                                                                        | Must                       |
 | Manage access quotas and throttling.                                                                                                                                                                                                | May                        |
