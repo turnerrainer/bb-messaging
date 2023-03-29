@@ -29,14 +29,14 @@ Communication between different government services (government to government) i
 5. Messaging Building Block allows for asynchronous communication, using either point-to-point communication or a Pub/Sub model (using Information Mediator Building Block) where the user is subscribed to a message room/group and will be receiving all messages intended for the “mother of newborn child” group.
 6. Security. Before allowing any messages to be published, the Messaging Building Block fetches a corresponding ID and a role or a session token available for the user for authentication and access purposes. Incorporates privacy into its design when the purpose of the authentication is not revealed if a service provider sends an authentication request.
 
-## **4.2 Examples for Messaging Building Block**
+## ~~**4.2 Examples for Messaging Building Block**~~
 
-Messaging Building Block is enabling signing up for and receiving services, such as:
+~~Messaging Building Block is enabling signing up for and receiving services, such as:~~
 
-* mother and childcare;
-* social care;
-* receiving entitlements from the government;
-* opening bank accounts;
-* communicating disaster messages or reminders about the voters' rights during elections; etc.
+* ~~mother and childcare;~~
+* ~~social care;~~
+* ~~receiving entitlements from the government;~~
+* ~~opening bank accounts;~~
+* ~~communicating disaster messages or reminders about the voters' rights during elections; etc.~~
 
-The use cases are detailed in the section of this document: [ANNEX I - Use Case Tables](10-other-resources.md#annex-i-use-case-tables-and-component-diagrams).
+~~The use cases are detailed in the section of this document:~~ [~~ANNEX I - Use Case Tables~~](10-other-resources.md#annex-i-use-case-tables-and-component-diagrams)~~.~~
