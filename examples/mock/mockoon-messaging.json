@@ -1,0 +1,174 @@
+{
+  "uuid": "91121d13-0a47-48b7-9180-a5b216a5eaaa",
+  "lastMigration": 27,
+  "name": "Messaging",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "94a5a195-69b3-41be-97df-4e1fb273a7d3",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "status/email",
+      "responses": [
+        {
+          "uuid": "352f32f1-e6de-47fd-9454-22f34b8592ad",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "a2fe3258-ffa8-48f7-9a0b-312400f57acd",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "callback/email",
+      "responses": [
+        {
+          "uuid": "363d7ef6-5302-4dce-a4cf-2c3244044d24",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "3abd79d9-8f58-4cb3-9c68-523fa60764bc",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "send/email/single",
+      "responses": [
+        {
+          "uuid": "88a9f955-9277-4d1b-9cc0-bd8e5ad08e98",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "777d1380-3802-4a4a-8866-94ddd1d2cf68",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "send/email/batch",
+      "responses": [
+        {
+          "uuid": "5b29cf9c-ceeb-47af-ade9-3798128d317d",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "94a5a195-69b3-41be-97df-4e1fb273a7d3"
+    },
+    {
+      "type": "route",
+      "uuid": "a2fe3258-ffa8-48f7-9a0b-312400f57acd"
+    },
+    {
+      "type": "route",
+      "uuid": "3abd79d9-8f58-4cb3-9c68-523fa60764bc"
+    },
+    {
+      "type": "route",
+      "uuid": "777d1380-3802-4a4a-8866-94ddd1d2cf68"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
