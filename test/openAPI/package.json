@@ -1,0 +1,13 @@
+{
+  "name": "bb-messaging-api-tests",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^9.1.0",
+    "chai": "^4.3.7",
+    "chai-json-schema": "^1.5.1",
+    "pactum": "^3.3.2"
+  }
+}
