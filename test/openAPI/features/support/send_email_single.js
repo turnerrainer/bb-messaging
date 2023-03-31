@@ -6,7 +6,7 @@ const {
   defaultResponseTime,
   sendSingleEmailEndpoint,
   contentTypeHeader,
-  sendEmailSingleResponseSchema,
+  sendEmailResponseSchema,
   sendEmailSingleRequestBody,
 } = require('./helpers/helpers');
 
@@ -66,12 +66,11 @@ Then(
 Then('The \\/send\\/email\\/single response should match json schema', () =>
   chai
     .expect(specSendEmailSingle._response.json)
-    .to.be.jsonSchema(sendEmailSingleResponseSchema)
+    .to.be.jsonSchema(sendEmailResponseSchema)
 );
 
 // Scenario Outline: User is unable to send an email due to unallowed method in the request
 // Given, When and others Then for this scenario are written in the aforementioned example
-
 Then(
   'The \\/send\\/email\\/single response should have status 405 - Method not allowed',
   () => specSendEmailSingle.response().to.have.status(405)

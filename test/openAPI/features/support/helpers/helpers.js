@@ -6,7 +6,7 @@ module.exports = {
     key: 'content-type',
     value: 'application/json; charset=utf-8',
   },
-  sendEmailSingleResponseSchema: {
+  sendEmailResponseSchema: {
     type: 'object',
     properties: {
       response: { type: 'string' },
